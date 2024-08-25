@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Scrolling Gallery</title>
+    
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.gallery-container {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap; 
+}
+.gallery {
+    display: inline-flex;
+}
+
+.gallery img {
+    height: 200px;
+    margin-right: 10px; 
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+</style>
+<body>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVoRaj1h7h5Se6h5cCzC99-C_oJoihnu_ujQ&s" alt="Image 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFHxqnLamOX8_IXz61OhVjsorCVJePEXFPLw&s" alt="Image 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtDZ3-Yw3bgKq-QSpxuvlERsUfa77gz2JJcw&s" alt="Image 3">
+           
+        </div>
+    </div>
+</body>
+</html>

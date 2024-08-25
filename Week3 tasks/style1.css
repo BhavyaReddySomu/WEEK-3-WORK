@@ -1,0 +1,22 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav ul{
+    background-color:#61ef63;
+}
+
+
+nav  ul a{
+    display: block;
+    color: white;
+   
+    padding: 14px 20px;
+  
+}
+
+nav ul a:hover {
+    background-color: #ddd;
+    color: black;
+}

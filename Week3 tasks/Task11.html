@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .dropdown button{
+        background-color: darkgray;
+        color: black;
+        border: none;
+        padding: 5px 10px;
+        cursor:pointer;
+    }
+    .dropdown a{
+        display: block;
+        color: black;
+        text-decoration: none;
+        padding: 15px 20px;
+    }
+    .dropdown .content{
+        display: none;
+           background-color: hsl(0, 5%, 51%);
+           position: absolute;
+           
+    }
+    .dropdown:hover .content{
+        display: block;
+        background-color: chocolate;
+        color:white;
+        font-size: 5ch;
+
+    }
+    .dropdown:hover button{
+        background-color: bisque;
+        color:white;
+    }
+    p{
+        color:blue;
+        position:absolute;
+        z-index:100px;
+        font-size: 13px;
+    }
+   
+</style>
+<body>
+    <div class="dropdown">
+        <button>Fruits</button>
+        <div class="content">
+            <a href="">Apple</a>
+            <a href="">Banan</a>
+            <a href="">Mango</a>
+            <a href="">Watermelon</a>
+        </div>
+    
+    </div> 
+    <p>This is the a dropdown menu that appears above other content when clicked.</p>
+    
+</body>
+</html>

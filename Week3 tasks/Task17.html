@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: white;
+        padding: 40px;
+        padding-top: 30px;
+    }
+    img{
+        max-width: 100%;
+        height:auto;
+        vertical-align: middle;
+        display: inline-block;
+
+    }
+    .Grid-wrapper> div {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .Grid-wrapper> div > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-sizing: 4px;
+    }
+    .Grid-wrapper{
+        display: grid;
+        grid-gap:15px;
+        grid-template-columns: repeat(auto-fit,minmax(250px,lfr));
+        grid-auto-rows: 200px;
+        grid-auto-flow: dense;
+    }
+</style>
+<body>
+    <div class="Grid-wrapper">
+     <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjrf32oObgAKWlghLICtV3ogyucUVY0p2-ew&s/" >
+     </div>
+     <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQVrO9FKarrAGq08vByBi6iEz-wLoEUi7c_g&s/" >
+     </div>
+     <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSPGd4hZBRM9KCgjDxDEek9GesAe7LpsbaGio5P-ql_HK1coJYFHxzCqyZL9zRCc1Mw78&usqp=CAU/" >
+     </div>
+     <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEORM58QoOyxnGKc1xcARaP264UJLkE649hQ&s/" >
+     </div>
+     <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvpMVbYrU1_4CnznkWwe10dylkTdbtLd5lhOExWQ9nKNMRkIGo1iJkTzQiBElnLw5Soe4&usqp=CAU/" >
+     </div>
+
+    </div>
+</body>
